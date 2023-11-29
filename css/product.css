@@ -1,0 +1,738 @@
+.link p a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 65px;
+    color: gray;
+    font-size: 20px;
+}
+
+/*début des propriétés CSS du main*/
+main{
+    width: 100%;
+    margin: auto;
+}
+
+main section:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+section {
+    width: 90%; 
+    max-width: 1200px;
+    margin: auto; 
+}
+
+.separator {
+    background-color: grey;
+    margin: 0 auto ;
+    height: 2px;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+#galerie {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#big {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+}
+#big img {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#container-thumbs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.thumb {
+    border-radius: 10px;
+}
+.thumb img {
+    width: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'montserrat';
+}
+.details h1 {
+    margin-top: 0;
+    font-family: 'monda';
+}
+
+.star i {
+    color: #FBBC6A;
+    margin: -3px;
+}
+.details h2 {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #000;
+    
+}
+.details h3 {
+    font-family: 'Monda';
+    font-size: 25px;
+    font-weight: bold;
+    color: #444;
+}
+.details ul  {
+    list-style: none;
+    padding: 0;
+}
+
+h3 span.barre {
+    text-decoration: line-through;
+    font-weight: bold;
+    padding: 10px;
+    color: red; 
+}
+.details span {
+    font-weight: bold;
+    color: #333;
+}
+.details .button {
+    width: 400px;
+    min-width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBBC6A;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.details .button:hover {
+    background-color: #ffad42;
+    transition: 0.5s;
+}
+.details .button .fa-amazon {
+    color:  #181818;
+    font-size: 1.9rem;
+    position: relative;
+    top: 3px;
+}
+.details .button a {
+    font-family: 'Montserra';
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #181818;
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+.advantage {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 10px;
+    font-family: 'montserrat';
+}
+
+.pic{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.pic img {
+    width: 60px;
+    cursor: pointer;
+}
+.advantage .star span {
+    font-weight: bold;
+    color: #111;
+    margin-left: 10px;
+}
+.advantage h3 {
+    font-size: 25px;
+}
+.advantage .star i {
+    margin: -2px;
+}
+.advantage i.fa-user{
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right:  10px;
+    color: #555;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.remark h2 {
+    text-align: center;
+    font-family: 'montserrat';
+}
+/*Fin des propriétés CSS du container principal*/
+
+@media screen and (max-width: 960px) {
+    header{
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    section {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+      
+    } 
+    .link p a{
+        margin-left: 45px;
+    }
+    .details{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    } 
+    #galerie {
+    width: 100%;
+
+    }
+    #big {
+        width: 100%;
+        min-width: 300px;
+        margin: 50px auto;
+    }
+    #big img {
+        width: 100%;
+        cursor: pointer;
+    }
+    #container-thumbs {
+        width: 100%;
+        gap: 10px; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    } 
+    .thumb {
+        border-radius: 10px;
+    }
+    .thumb img {
+        width: 80px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    footer {
+        text-align: center;
+    }
+     
+ 
+}
+
+
+
+@media screen and (max-width: 360px) {
+    header {
+        margin-bottom: 0px;
+    }
+    .details{
+        width: 300px;
+    }
+    .details h1 {
+        font-size: 1.2rem;
+    }
+    .details h2,h3,span {
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+    .details .button {
+        min-width: 250px;
+    }
+     .advantage {
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'montserrat';
+    }
+    .advantage p {
+        margin-left: 10px; 
+    } 
+
+    .pic img {
+        width: 40px;
+        margin-left: 10px; 
+    }
+    
+    .advantage .star span {
+        font-weight: bold;
+        color: #111;
+        font-size: 13px;
+    }
+    .advantage h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .list {
+        margin: 0;
+    } 
+    footer {
+        font-size: 12px;
+    }
+
+} 
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+}  
+
+
+/* Début des propriétés CSS du header 
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: #131A22 ;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 0px 2px .5px rgba(0, 0, 0, 0.304);
+    height: 70px;
+    
+}
+
+header h1{
+    font-family: 'Monda';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+ 
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #131A22; 
+    background-color: #fff;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a{
+    font-family: 'Monda';
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #FBBC6A;
+    transition: 0.5s;
+}
+
+#header_burger{
+    display: none;
+}
+#header_burger svg{
+    stroke: #fff;
+    width: 30px;
+    height: 30px;
+}
+.link p a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 65px;
+    color: gray;
+    font-size: 20px;
+}
+/* Fin des propriétés CSS du header 
+
+/*début des propriétés CSS du main
+main section:first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+section {
+    max-width: 90%;
+    margin: auto;
+}
+
+.separator {
+    background-color: grey;
+    margin: 0 auto ;
+    height: 2px;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+#galerie {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#big {
+    width: 90%;
+    border: 1px solid red;
+}
+#big img {
+    width: 100%;
+    cursor: pointer;
+}
+#container-thumbs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.thumb {
+    border-radius: 10px;
+}
+.thumb img {
+    width: 60px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.details {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'montserrat';
+
+}
+.details h1 {
+    margin-top: 0;
+    font-family: 'monda';
+}
+
+.star i {
+    color: #FBBC6A;
+    margin: -3px;
+}
+.details h2 {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #000;
+    
+}
+.details h3 {
+    font-family: 'Monda';
+    font-size: 25px;
+    font-weight: bold;
+    color: #444;
+}
+.details ul  {
+    list-style: none;
+    padding: 0;
+}
+
+h3 span.barre {
+    text-decoration: line-through;
+    font-weight: bold;
+    padding: 10px;
+    color: red; 
+}
+.details span {
+    font-weight: bold;
+    color: #333;
+}
+.details .button {
+    width: 300px;
+    min-width: 400px;
+    height: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FBBC6A;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.details .button .fa-amazon {
+    color:  #181818;
+    font-size: 1.9rem;
+    position: relative;
+    top: 3px;
+}
+.details .button a {
+    font-family: 'Montserra';
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #181818;
+    font-size: 1.8rem;
+}
+.advantage {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    font-family: 'montserrat';
+}
+
+.pic{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.pic img {
+    width: 60px;
+    cursor: pointer;
+}
+.advantage .star span {
+    font-weight: bold;
+    color: #111;
+    margin-left: 10px;
+}
+.advantage h3 {
+    font-size: 25px;
+}
+.advantage .star i {
+    margin: -2px;
+}
+.advantage i.fa-user{
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right:  10px;
+    color: #555;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.remark h2 {
+    text-align: center;
+    font-family: 'montserrat';
+}
+/*Fin des propriétés CSS du container principal
+
+/* Début des propriétés CSS du footer 
+footer {
+    padding: 20px;
+    background-color: #131A22;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+footer ul li a {
+    font-family: 'Monda';
+    text-decoration: none;
+    color: #fff;
+}
+footer ul li span {
+    font-family: 'Monda';
+    color: #fff;
+    margin: 10px;
+}
+
+/* Fin des propriétés CSS du footer 
+
+
+
+
+@media screen and (max-width: 960px) {
+    header{
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    section {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+      
+    } 
+    .link p a{
+        margin-left: 45px;
+    }
+    /* .thumbs{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .thumbs img{
+        width: 80px;
+    }
+    .big{
+        width: 100%;
+        min-width: 300px;
+        margin: 50px auto;
+    }
+    .big img{
+        width: 80%;
+        min-width: 300px;
+    }
+    .details{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    } 
+    #galerie {
+    width: 100%;
+
+    }
+    #big {
+        width: 100%;
+        min-width: 300px;
+        margin: 50px auto;
+    }
+    #big img {
+        width: 100%;
+        cursor: pointer;
+    }
+    #container-thumbs {
+        width: 100%;
+        gap: 10px; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    } 
+    .thumb {
+        border-radius: 10px;
+    }
+    .thumb img {
+        width: 60px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    footer ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+     footer ul li a {
+        width: 300px;
+        text-align: center;
+    }
+ 
+}
+
+
+
+@media screen and (max-width: 360px) {
+    header {
+        margin-bottom: 0px;
+    }
+    .details{
+        width: 300px;
+    }
+    .details h1 {
+        font-size: 1.2rem;
+    }
+    .details h2,h3,span {
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+    .details .button {
+        width: 300px;
+        min-width: 300px;
+    }
+     .advantage {
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'montserrat';
+    }
+    .advantage p {
+        margin-left: 10px; 
+    } 
+
+    .pic img {
+        width: 40px;
+        margin-left: 10px; 
+    }
+    
+    .advantage .star span {
+        font-weight: bold;
+        color: #111;
+        font-size: 13px;
+    }
+    .advantage h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .list {
+        margin: 0;
+    } 
+    footer {
+        font-size: 12px;
+    }
+
+}  */
+
+
+
+
+
+
